@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130928141232) do
+ActiveRecord::Schema.define(version: 20130928143009) do
+
+  create_table "investmen_plans", force: true do |t|
+    t.string   "name"
+    t.integer  "refinancing_period_length"
+    t.string   "refinancing_period_unit"
+    t.integer  "interest_rate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email"
