@@ -11,6 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20130928141232) do
+
+  create_table "users", force: true do |t|
+    t.string   "email"
+    t.string   "state"
+    t.string   "password_digest"
+    t.string   "first_name"
+    t.string   "middle_name"
+    t.string   "last_name"
+    t.string   "confirmation_token"
+    t.string   "reset_password_token"
+    t.string   "avatar"
+    t.text     "description"
+    t.date     "birthday"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "wallets", force: true do |t|
+    t.string   "operator"
+    t.string   "account_number"
+    t.string   "currency"
+    t.string   "amount"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
