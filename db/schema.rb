@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130928143009) do
+ActiveRecord::Schema.define(version: 20130928143646) do
+
+  create_table "deposits", force: true do |t|
+    t.integer  "wallet_id"
+    t.integer  "investment_plan_id"
+    t.integer  "amount"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "investmen_plans", force: true do |t|
     t.string   "name"
