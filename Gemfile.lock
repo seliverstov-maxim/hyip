@@ -1,21 +1,13 @@
 GIT
-  remote: git://github.com/milgner/compass-rails.git
-  revision: c86e7fd9c2605c80816a2f64a3fb8b7c3a09e494
-  branch: rails4
-  specs:
-    compass-rails (1.0.3)
-      compass (>= 0.12.2, < 0.14)
-
-GIT
-  remote: git://github.com/plataformatec/simple_form.git
-  revision: 50c4ac4a8bd0cb883ddaa309b779978e4207fef4
+  remote: https://github.com/plataformatec/simple_form.git
+  revision: b5ae13112ccd6b2ec12a3c5190bc6264c993b42d
   specs:
     simple_form (3.0.0)
       actionpack (>= 4.0.0, < 4.1)
       activemodel (>= 4.0.0, < 4.1)
 
 GIT
-  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  remote: https://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: dc5536d3aaf92ad04ea215bcfb42dbf62139da60
   branch: bootstrap3
   specs:
@@ -94,7 +86,7 @@ GEM
       railties (>= 3.0)
       sass-rails (>= 3.2)
     chronic (0.10.2)
-    chunky_png (1.2.8)
+    chunky_png (1.2.9)
     ci_reporter (1.9.0)
       builder (>= 2.1.2)
     cliver (0.2.2)
@@ -111,6 +103,8 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
     configus (0.0.4)
       rake
     descendants_tracker (0.0.1)
@@ -329,7 +323,7 @@ DEPENDENCIES
   chosen-rails
   ci_reporter
   coffee-rails (~> 4.0.0)
-  compass-rails!
+  compass-rails
   configus
   enumerize
   exceptional
